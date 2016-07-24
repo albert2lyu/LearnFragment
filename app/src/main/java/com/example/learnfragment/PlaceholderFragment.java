@@ -1,5 +1,6 @@
 package com.example.learnfragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -28,6 +29,13 @@ public class PlaceholderFragment extends Fragment {
               }
           }
         );
+
+        rootView.findViewById(R.id.btnShowTabbedFragment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Tabs.class));
+            }
+        });
         return rootView;
     }
 }

@@ -16,4 +16,10 @@ android:layout_height="match_parent">
         android:text="显示另一个fragment"
         />
 
+    <Button
+        android:id="@+id/btnShowTabbedFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示tabs fragment"/>
+
 </LinearLayout>
